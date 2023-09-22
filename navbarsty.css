@@ -1,0 +1,144 @@
+@font-face {
+    font-family: gnuolane;
+    src: url(fonts/gnuolane_bd.otf);
+}
+
+@font-face {
+    font-family: helveticaneue;
+    src: url(fonts/HelveticaNeueLt.ttf);
+}
+/* Reset some default styles for the list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    width: 150px; /* Set the width to 140px */
+    position: relative; 
+    margin-right: 1rem;
+    padding-right: 10px;
+    -webkit-box-align: center;
+    border-radius: 5px;
+    background-color: #f2a70c;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+/* Style the "Menu" text */
+.menu-text {
+    margin-right: 10px; /* Add some spacing to the right of the text */
+    padding-left: 10px;
+    padding-top: 17px;
+    font-family: helveticaneue;
+    letter-spacing: 0.5px;
+    font-size:21px;
+    color: #021B29;
+    font-weight: bold;
+
+}
+
+/* Style the hamburger menu */
+.hamburger {
+    display: flex; /* Initially show the hamburger icon */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1; /* Ensure the hamburger appears above the dropdown */
+    
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #021B29;
+    margin: 3px 0;
+}
+
+/* Style the navigation links */
+.nav-links {
+    display: none; /* Initially hide the links */
+    flex-direction: column; /* Display links vertically */
+    gap: 10px; /* Adjust spacing between links */
+    position: absolute; /* Position the dropdown absolutely */
+    top: 40px; /* Position it below the navbar header */
+    left: 0; /* Position it at the left edge */
+    background-color: #f2a70c;
+    width: 100%; /* Set the width to 100% to match the navbar */
+    margin-top: 1.5rem;
+    padding-bottom: 15px;
+    border-radius: 9px;
+    text-align: left;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-top: 2rem;
+    
+    font-weight: bold;
+    
+    
+}
+
+.nav-links.active {
+    display: flex; /* Show the links when the hamburger is clicked */
+}
+
+.nav-links li {
+    padding: 0;
+    animation: fadeIn 0.5s ease-in-out; /* Add animation */
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #021B29 !important; /* Add !important */
+    font-family: helveticaneue;
+    font-weight: bold;
+    
+    /* Add any additional font styles as needed */
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .navbar {
+        width: auto; /* Remove fixed width on small screens */
+    }
+
+    .hamburger.active {
+        transform: rotate(90deg); /* Rotate the hamburger icon */
+    }
+}

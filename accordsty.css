@@ -1,0 +1,44 @@
+/* Custom styles for the accordion */
+
+/* Change the background color of the accordion headers */
+.accordion-button {
+    background-color: #007BFF; /* Change to your desired header background color */
+    color: #fff; /* Change to your desired header text color */
+}
+
+/* Change the background color of the accordion bodies */
+.accordion-body {
+    background-color: #f8f9fa; /* Change to your desired body background color */
+    color: #333; /* Change to your desired body text color */
+    font-family: proxima-novaA-regular;
+    margin-left: 0.65rem;
+}
+
+/* Change the color of the active accordion header (when expanded) */
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(to bottom, #FFA500, #FF6347); /* Change to your desired active header background color */
+    
+}
+
+/* Change the color of the accordion border */
+.accordion-item {
+    border-color: #ddd; /* Change to your desired border color */
+}
+
+/* Add hover effect to accordion headers (optional) */
+.accordion-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
+
+.accordion-item {
+    background-color: #01141F;
+    border: none #01141F;
+    
+    
+}
+.accordion-h2 {
+    text-align: end;
+}
+
+
+

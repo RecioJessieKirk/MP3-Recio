@@ -1,0 +1,36 @@
+.item-dept-cont {
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+
+.transparent {
+    color: transparent;
+}
+
+.cpe-mission {
+
+}
+.something1 {
+    padding-bottom: 59px;
+}
+
+.something2 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+
+
+
+
+
+
+

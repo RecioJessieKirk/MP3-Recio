@@ -1,0 +1,25 @@
+.cpe-card-img-top {
+    width: 350px;
+    height: 350px;
+    object-fit: cover; /* This property ensures the image covers the entire space without distortion */
+    border-radius: 20px;
+}
+ .d-flex {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    
+
+ } 
+
+ .cpe-event {
+    padding-left: 10rem;
+    padding-top: 5rem;
+ }
+ .cpe-event-colored {
+    color: #f2a70c;
+ }
+
+
+ 

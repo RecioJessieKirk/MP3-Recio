@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Hamburger Menu</title>
+    <style>
+        /* Primary Navbar Styles */
+        .navbar-container {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        .navbar-container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .navbar-container li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        /* Hamburger Navbar Styles */
+        .hamburger-navbar {
+            background-color: #444;
+            color: #fff;
+            padding: 5px;
+            display: none; /* Initially hidden */
+        }
+        
+        .hamburger-navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .hamburger-navbar li {
+            margin-bottom: 10px;
+        }
+        
+        /* Hamburger Icon Styles */
+        .hamburger-icon {
+            display: none;
+            cursor: pointer;
+        }
+        
+        /* Media Query to Show Hamburger Navbar */
+        @media (max-width: 768px) {
+            .navbar-container {
+                display: none; /* Hide primary navbar */
+            }
+            
+            .hamburger-navbar {
+                display: block; /* Show hamburger navbar */
+            }
+            
+            .hamburger-icon {
+                display: block; /* Show hamburger icon */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hamburger Icon -->
+    <div class="hamburger-icon">&#9776;</div>
+    
+    <!-- Navbar Container -->
+    <div class="navbar-container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hamburger Navbar -->
+    <div class="hamburger-navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        // JavaScript to toggle the hamburger menu
+        document.querySelector('.hamburger-icon').addEventListener('click', function() {
+            document.querySelector('.hamburger-navbar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
